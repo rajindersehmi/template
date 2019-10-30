@@ -5,10 +5,35 @@
     <title>Aione Framework</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
     <style>
+        .preloader {
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+            position: absolute;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
         .section-testimonials {
             background: #f7f7f7;
             background-color: #EDEDED !important;
-                overflow: hidden;
+            overflow: hidden;
         }
         
         .section-testimonials .slider-wrapper {
@@ -18,8 +43,8 @@
             left: 0;
             z-index: 1;
             padding-bottom: 175px;
-                overflow: hidden;
-            }       
+            overflow: hidden;
+        }
         
         .section-testimonials .slider .slider-item img {
             width: 7%;
@@ -124,8 +149,9 @@
         .section-partener .slider-item img:hover {
             opacity: 1 !important;
         }
-        .section-partener h3{
-        	display: none;
+        
+        .section-partener h3 {
+            display: none;
         }
         
         .aione-header {
@@ -172,7 +198,7 @@
             height: 550px;
         }
         
-        .section-home .owl-carousel .owl-dots.disabled,485px
+        .section-home .owl-carousel .owl-dots.disabled,
         .owl-carousel .owl-nav.disabled {
             display: inline-block;
         }
@@ -272,8 +298,9 @@
             padding-left: 3em;
             padding-right: 2em;
         }
+        
         .element-section .element-wrapper {
-        	height: 146px;
+            height: 146px;
         }
         
         .element-section h4 {
@@ -284,7 +311,7 @@
         .element-section p {
             color: #777;
             line-height: 26px;
-            margin-bottom:20px;
+            margin-bottom: 20px;
             font-size: 14px
         }
         
@@ -389,10 +416,12 @@
         
         .aione-footer .input-group {
             position: relative;
-		margin-top:16px;
+            margin-top: 16px;
         }
-	    .aione-footer input,button:focus {
-        	outline: none;
+        
+        .aione-footer input,
+        button:focus {
+            outline: none;
         }
         
         .aione-footer .input-group-append {
@@ -407,6 +436,9 @@
 <!-- End of Head Section -->
 
 <body>
+
+    <div class="preloader"></div>
+
     <div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
         <div class="wrapper">
             <div id="aione_header" class="aione-header sticky ">
@@ -475,7 +507,7 @@
                                             <div class="ac l50 s50 m50">
                                                 <div class="element-wrapper aione-align-right fadeInLeft animated" data-animate="fadeInLeft">
                                                     <div class="ac l90 s90 m90">
-                                                        <h4 >Customer Support</h4>
+                                                        <h4>Customer Support</h4>
                                                         <p class="ml-21">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
                                                     </div>
                                                     <div class="ac l10 s10 m10">
@@ -593,14 +625,14 @@
                                                         <blockquote>
                                                             <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
                                                         </blockquote>
-                                                        <h6 class="mb-22" ><strong>- John Smith. Okler</strong></h6>
+                                                        <h6 class="mb-22"><strong>- John Smith. Okler</strong></h6>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                     <section id="section_partener" class="section-partener">
-                                    	<h3>Parteners</h3>
+                                        <h3>Parteners</h3>
                                         <div class="slider-wrapper">
                                             <div class="slider owl-carousel owl-theme carousel-center-active-item aione" data-nav-text="" data-items="7" data-margin="" data-loop="true" data-autoplay="true">
                                                 <div class="slider-item">
@@ -701,10 +733,10 @@
                                 <div class="input-group position-relative">
                                     <input type="text" name="newsletterEmail" placeholder="Email Address...">
                                     <span class="input-group-append postion-absolute">
-							<button class="aione-button" type="submit">
-								<strong class="font-weight-700">Subscribe!</strong>
-							</button>
-						</span>
+							            <button class="aione-button" type="submit">
+								            <strong class="font-weight-700">Subscribe!</strong>
+							            </button>
+						            </span>
                                 </div>
                             </div>
                         </div>
