@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aione Framework</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+<style>
+	.aione-header{
+		position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 10px 0;
+    transition: all 450ms ease-in-out;
+    background:transparent;
+	}
+   .fixed{
+    background: #222222;
+    
+  }
+	.section_home{
+		position: relative;
+    z-index: 1;
+    top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            margin-bottom: 200px;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+	}
+	.home-wrapper{
+		min-height: 700px;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+    bottom: -200px;
+	}
+	.section_home .ar{
+		max-width: 1170px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+	}
+	.section_home .profile img{
+		
+		height: 700px;
+		border-radius: 12px;
+	}
+	.aione-nav.horizontal {
+            border-bottom: 0;
+        }
+        
+        span.nav-item-text {
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0 10px;
+            letter-spacing: -0.5px;
+            font-style: normal;
+            padding: 0 .9em;
+            text-transform: uppercase;
+        }
+        .aione-nav ul li a{
+          color: #ffffff;
+        }
+        .aione-nav ul li.active > a {
+            color: #e36159;
+        }
+       .aione-nav ul li a:hover {
+            color: #e36159;
+        }
+        .profile .hello{
+          font-size: 14px;
+    font-weight: normal;
+    color: #222222;
+    margin-bottom: -12px;
+    letter-spacing: 2.1px;
+        }
+        .profile h1{
+          font-size: 48px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: -10px;
+        }
+        .profile h2{
+          font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #222222;
+        }
+        .profile p{
+          font-size: 16px;
+    color: #777777;
+    margin-bottom: 40px;
+    line-height: 26px;
+        }
+        .profile-list .fa {
+            display: block;
+            
+            float: left;
+            color: #766dff;
+            font-size: 20px;
+            
+            line-height: 38px;
+            
+        }
+
+        .profile-list .cont {
+            display: block;
+            margin-left: 70px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 38px;
+            color: #77777;
+        }
+        
+    </style>
+</head>
+<!-- End of Head Section -->
+<body>
+<div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
+<div class="wrapper">
+<div id="aione_header" class="aione-header sticky head-bg ">
+	<div class="wrapper">
+		<div class="ar ml-100 pt-10 pb-10 ">
+			<div class="ac l30 m30 s30">
+				<div class="aione-logo pt-8 font-size-24 font-weight-700 white">
+					HELLO
+				</div>
+			</div>
+			<div class="ac l70 m70 s70">
+				<nav id="aione_nav" class="aione-nav  horizontal aione-align-right">
+					<ul id="aione_menu" class="aione-menu">
+						<li class="aione-nav-item active level0"><a href="#about"><span class="nav-item-text" data-hover="About">Home</span></a></li>
+						<li class="aione-nav-item level0"><a href="#skills"><span class="nav-item-text" data-hover="Skills">About</span></a></li>
+						<li class="aione-nav-item level0"><a href="#portfolio"><span class="nav-item-text" data-hover="Portfolio">Services</span></a></li>
+						<li class="aione-nav-item level0"><a href="#services"><span class="nav-item-text" data-hover="Services">Portfolio</span></a></li>
+						<li class="aione-nav-item level0"><a href="#testimonials"><span class="nav-item-text" data-hover="Testimonials">Testimonials</span></a></li>
+						<li class="aione-nav-item level0"><a href="#contact"><span class="nav-item-text" data-hover="Contact">Contact</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div> 
+<!--  Start aione-header Section-->
+<div id="aione_main" class="aione-main fullwidth">
+	<div class="wrapper">
+		<div id="aione_content" class="aione-content">
+        	<div class="wrapper">
+            	<div id="aione_page_content" class="aione-page-content">
+               		<div class="wrapper">
+               			<section class="section_home">
+               				<div class="ar">
+               					<div class="home-wrapper">
+               						<div class="section-box">
+               							<div class="profile">
+               								<div class="ac l65 m65 s65 pr-90">
+               									<div class="image">
+               										<img src="http://aione.oxosolutions.com/rajindersehmi/wp-content/uploads/sites/57/2019/10/IMG_6659.jpeg" alt="">
+               									</div>
+               								</div>
+               								<div class="ac l35 m35 s35  mt-50">
+               									<p class="hello">HELLO EVERYBODY, I AM</p>
+               									<h1 class="profile-title">RAJINDER</br>SINGH</h1>
+               									<h2 class="profile-position">Developer and Startup entrepreneur</h2>
+               									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+               									<ul class="profile-list">
+               										<li>
+               											<i class="fa fa-calendar" aria-hidden="true"></i>
+               											<span class="cont">21</span>
+               										</li>
+               										<li>
+               											<i class="fa fa-phone" aria-hidden="true"></i>
+               											<span class="cont">0 980 341 42 66</span>
+               										</li>
+               										<li>
+               											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+               											<span class="cont">rajindersehmi14@gmail.com</span>
+               										</li>
+               										<li>
+               											<i class="fa fa-home" aria-hidden="true"></i>
+               											<span class="cont">143001, Chawinda Devi, Amritsar, Punjab</span>
+               										</li>
+               									</ul>
+
+               								</div>
+               							</div>
+               						</div>
+               					</div>
+               				</div>
+               			</section>
+					</div>
+        </div>
+               	<!-- .aione-page-content -->
+            </div>
+        </div>
+        <!-- .aione-content -->
+	</div>
+</div>
+<!-- .aione-main -->
+<div id="aione_footer" class="aione-footer">
+	<div class="wrapper">
+	</div>
+</div>
+<!-- .aione-footer -->			
+<div id="aione_copyright" class="aione-copyright">
+	<div class="wrapper">
+	</div>
+</div>
+<!-- .aione-copyright -->
+</div>
+</div>
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js">
+	</script> 
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js">
+</script> 
+</body>
+</html>
+										
