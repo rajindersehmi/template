@@ -28,7 +28,7 @@
             z-index: 1;
             width: 100%;
             margin-bottom: 200px;
-            background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
         }
         
         .home-wrapper {
@@ -72,12 +72,10 @@
             color: #ffffff;
         }
         
-        .aione-nav ul li.active > a {
-            color: #e36159;
-        }
-        
-        .aione-nav ul li a:hover {
-            color: #e36159;
+        .fixed .aione-nav ul li a:hover {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         .profile .hello {
@@ -112,7 +110,7 @@
         .profile-list .fa {
             display: block;
             float: left;
-            color: #766dff;
+            color: #36d1dc;
             font-size: 20px;
             line-height: 38px;
         }
@@ -132,10 +130,199 @@
             border-radius: 5px;
         }
         
+        .profile-social li {
+            margin-right: 10px;
+        }
+        
         .profile-social .icon:hover {
-            background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            color: white;
+        }
+        
+        .bg-progress-skill {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            border-radius: 12px;
+        }
+        
+        .skill-bg {
+            background-color: #efeff0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .bg-progress-skill {
+            animation: sam 2.8s;
+        }
+        
+        @keyframes sam {
+            0% {
+                width: 0%;
+            }
+        }
+        
+        .bg-lighten-3 {
+            border-radius: 12px;
+        }
+        
+        .about-wrapper h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #222222;
+        }
+        
+        .about-wrapper .profile-p {
+            font-size: 16px;
+            line-height: 26px;
+            font-family: roboto, sans-serif;
+            color: #777;
+            max-width: 495px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        
+        .about-wrapper .wrapper {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .about-wrapper .wrapper .fa {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .about-wrapper .wrapper p {
+            color: #777;
+            font-family: roboto, sans-serif;
+            font-size: 16px;
+        }
+        
+        .section_skills {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+        }
+        
+        .timeline {
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .timeline:before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            display: inline-block;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+            margin-left: -1.5px;
+            background-color: rgba(255, 255, 255, .2);
+        }
+        
+        .timeline-item {
+            position: relative;
+            width: 42%;
+            height: 146px;
+            margin: 0 0 0 53%;
+            padding: 12px;
+        }
+        
+        .timeline-item .timeline-dot {
+            margin: 0;
+            padding: 0;
+            width: 15px;
+            height: 15px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 30px;
+            left: -26px;
+            background-color: rgba(255, 255, 255, .2);
+            border-radius: 50%;
+        }
+        
+        .timeline-item .timeline-dot:before {
+            content: '';
+            height: 7px;
+            width: 7px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 52%;
+            top: 4px;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item .timeline-date {
+            line-height: 3.4;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            left: -210px;
+            color: white;
+            font-size: 16px;
+            font-weight: 900;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .timeline-item .timeline-title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 2;
+            padding-left: 45px;
+            color: white;
+        }
+        
+        .timeline-item .timeline-description {
+            font-size: 17px;
+            font-weight: normal;
+            text-align: left;
+            padding-left: 45px;
+            line-height: 22px;
+            color: rgba(255, 255, 255, .75);
+        }
+        
+        .section_services {
+            background-color: #f9f9ff;
+        }
+        
+        .section_services .services-wrapper {
+            background: #fff;
+            padding: 50px 35px;
+            min-height: 170px;
+            border-radius: 10px;
+            transition: all 300ms linear 0s;
+        }
+        
+        .section_services .services-icon {
+            color: #e1e1e1;
+        }
+        
+        .section_services .services-wrapper:hover {
+            box-shadow: 0px 0px 10px 0px #d2d2d2;
+        }
+        
+        .section_services .services-wrapper:hover .fa {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section_services .services-description p {
+            font-size: 16px;
+            line-height: 1.4;
+            font-family: roboto, sans-serif;
+            color: #777;
+            margin-bottom: 0;
         }
     </style>
+
 </head>
 <!-- End of Head Section -->
 
@@ -172,7 +359,7 @@
                         <div class="wrapper">
                             <div id="aione_page_content" class="aione-page-content">
                                 <div class="wrapper">
-                                    <section class="section_home">
+                                    <section class="section_home ">
                                         <div class="ar">
                                             <div class="home-wrapper">
                                                 <div class="section-box">
@@ -206,7 +393,7 @@
                                                                 </li>
                                                             </ul>
                                                             <div class="profile-social mt-40">
-                                                                <ul class="aione-social-icons small circle horizontal dark">
+                                                                <ul class="aione-social-icons small circle horizontal dark aione-align-left">
                                                                     <li class="facebook"><a href="https://www.facebook.com/jashan.sehmi.7" target="_blank"><span class="icon"></span><span class="label">Facebook</span></a></li>
                                                                     <li class="twitter"><a href="https://twitter.com/RajinderSehmi" target="_blank"><span class="icon"></span><span class="label">Twitter</span></a></li>
                                                                     <li class="youtube"><a href="https://www.youtube.com/channel/UCqHGKmt9QRIhs802afbzldA?view_as=subscriber" target="_blank"><span class="icon"></span><span class="label">Youtube</span></a></li>
@@ -214,6 +401,218 @@
                                                             </div>
 
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_about">
+                                        <div class="ar pl-72 pb-80 pt-100">
+                                            <div class="ac l50 m50 s50">
+                                                <div class="about-wrapper">
+                                                    <h1 class="profile-title">ABOUT MYSELF</h1>
+                                                    <p class="profile-p">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+                                                    <div class="ac l33 m33 s33">
+                                                        <div class="wrapper">
+                                                            <i class="fa fa-database fa-2x" aria-hidden="true"></i>
+                                                            <h4 class="font-weight-700 black">$2.5M</h4>
+                                                            <p>Total Donation</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l33 m33 s33">
+                                                        <div class="wrapper">
+                                                            <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                                                            <h4 class="font-weight-700 black">1465</h4>
+                                                            <p>Total Projects</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l33 m33 s33">
+                                                        <div class="wrapper">
+                                                            <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                                                            <h4 class="font-weight-700 black">3965</h4>
+                                                            <p>Total Volunteers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ac l50 m50 s50 pt-30 pl-25">
+                                                <div class="bar-wrapper">
+                                                    <div class="mb-10">
+                                                        <div class="aione-title">
+                                                            <h6 class="font-weight-600 black aione-float-left mb-15">CSS/HTML 90%</h6>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="bg-border">
+                                                            <div class="width-80 bg-grey bg-lighten-3 mt-5">
+                                                                <div class="width-90 bg-progress-skill pt-10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-10">
+                                                        <div class="aione-title">
+                                                            <h6 class="font-weight-600 black aione-float-left mb-15">JQUERY 80%</h6>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="bg-border">
+                                                            <div class="width-80 bg-grey bg-lighten-3 mt-5">
+                                                                <div class="width-80 bg-progress-skill pt-10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-10">
+                                                        <div class="aione-title">
+                                                            <h6 class="font-weight-600 black aione-float-left mb-15">JAVASCRIPT 70%</h6>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="bg-border">
+                                                            <div class="width-80 bg-grey bg-lighten-3 mt-5">
+                                                                <div class="width-70 bg-progress-skill pt-10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-10">
+                                                        <div class="aione-title">
+                                                            <h6 class="font-weight-600 black aione-float-left mb-15">SUBLIME 75%</h6>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="bg-border">
+                                                            <div class="width-80 bg-grey bg-lighten-3 mt-5">
+                                                                <div class="width-75 bg-progress-skill pt-10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-10">
+                                                        <div class="aione-title">
+                                                            <h6 class="font-weight-600 black aione-float-left mb-15">PHOTOSHOP 80%</h6>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="bg-border">
+                                                            <div class="width-80 bg-grey bg-lighten-3  mt-5">
+                                                                <div class="width-80 bg-progress-skill pt-10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_skills pt-75 pb-30">
+                                        <div class="wrapper aione-align-center">
+                                            <div class="aione-tabs horizontal align-center theme-bold">
+                                                <div class="nav">
+                                                    <div data-target="#tab_sollicitudin" class="active">My Experiences </div>
+                                                    <div data-target="#tab_gravida" class="">My Education </div>
+                                                </div>
+                                                <div class="content">
+                                                    <div id="tab_sollicitudin" class="active">
+                                                        <h3 class="aione-align-center pv-10 "></h3>
+                                                        <div class="entry-content" style="margin: 50px 0 60px 0;">
+                                                            <div class="timeline">
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2016-2017</div>
+                                                                    <div class="timeline-title">HTML/CSS</div>
+                                                                    <div class="timeline-description">Senior Web Designer </br> Santa monica, Los angeles</div>
+                                                                </div>
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2017-2018</div>
+                                                                    <div class="timeline-title">WORDPRESS</div>
+                                                                    <div class="timeline-description">WordPress (WordPress.org) is a content management system (CMS) </div>
+                                                                </div>
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2018-2019</div>
+                                                                    <div class="timeline-title">PHOTOSHOP</div>
+                                                                    <div class="timeline-description">Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tab_gravida">
+                                                        <h3 class="aione-align-center pv-10 "></h3>
+                                                        <div class="entry-content" style="margin: 50px 0 60px 0;">
+                                                            <div class="timeline">
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2013-2014</div>
+                                                                    <div class="timeline-title">MATRICULATION</div>
+                                                                    <div class="timeline-description">Punjab School Education Board</div>
+                                                                </div>
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2015-2016</div>
+                                                                    <div class="timeline-title">+2 High Standard</div>
+                                                                    <div class="timeline-description">Punjab School Education Board </div>
+                                                                </div>
+                                                                <div class="timeline-item">
+                                                                    <div class="timeline-dot"></div>
+                                                                    <div class="timeline-date">July 2016-2019</div>
+                                                                    <div class="timeline-title">BCA</div>
+                                                                    <div class="timeline-description">Guru Nanak Dev University </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_services pt-60 pb-80">
+                                        <h3 class="aione-align-center black font-size-36 font-weight-700">SERVICES</h3>
+                                        <div class="wrapper mt-30 services-bg">
+                                            <div class="ar">
+                                                <div class="wrapper width-90">
+                                                    <div class="ac l33 m50 s100 mt-25 ">
+                                                        <div class="services-wrapper">
+
+                                                            <div class="services-icon">
+                                                                <span><i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i></span>
+                                                            </div>
+
+                                                            <div class="services-title">
+                                                                <h3 class="title font-size-24 font-weight-700 mb-15">DESIGN</h3>
+
+                                                            </div>
+                                                            <div class="services-description">
+                                                                <p>At OXO Solutions®, we provide you with total custom website design solutions.</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l33 m50 s100 mt-25 ">
+                                                        <div class="services-wrapper">
+
+                                                            <div class="services-icon">
+                                                                <span><i class="fa fa-desktop fa-3x" aria-hidden="true"></i></i></span>
+                                                            </div>
+
+                                                            <div class="services-title">
+                                                                <h3 class="title font-size-24 font-weight-700 mb-15">WEB DEVELOPMENT</h3>
+
+                                                            </div>
+                                                            <div class="services-description">
+                                                                <p>We blend creativity and best practices of Web Design and Development to create a modern & interactive experience.</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l33 m50 s100 mt-25 ">
+                                                        <div class="services-wrapper">
+
+                                                            <div class="services-icon">
+                                                                <span><i class="fa fa-wordpress fa-3x" aria-hidden="true"></i></i></span>
+                                                            </div>
+
+                                                            <div class="services-title">
+                                                                <h3 class="title font-size-24 font-weight-700 mb-15">WORD PRESS</h3>
+
+                                                            </div>
+                                                            <div class="services-description">
+                                                                <p>Let’s use power of content management systems and customize according to your business requirements.</p>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
