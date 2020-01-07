@@ -4,6 +4,8 @@
 <head>
     <title>Aione Framework</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
     <style>
         .aione-header {
             position: absolute;
@@ -39,11 +41,11 @@
             padding: 30px;
             box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
             bottom: -200px;
+            width: 80%;
+            margin: 0 auto;
         }
         
         .section_home .ar {
-            max-width: 1170px;
-            width: 100%;
             padding-left: 25px;
             padding-right: 25px;
             margin: 0 auto;
@@ -240,7 +242,7 @@
             box-sizing: border-box;
             position: absolute;
             top: 30px;
-            left: -26px;
+            left: -8.4%;
             background-color: rgba(255, 255, 255, .2);
             border-radius: 50%;
         }
@@ -305,7 +307,7 @@
         }
         
         .section_services .services-wrapper:hover {
-            box-shadow: 0px 0px 10px 0px #d2d2d2;
+            box-shadow: 0px 0px 15px -5px black;
         }
         
         .section_services .services-wrapper:hover .fa {
@@ -320,6 +322,98 @@
             font-family: roboto, sans-serif;
             color: #777;
             margin-bottom: 0;
+        }
+        
+        .view {
+            border: 10px solid #ffffff;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+        
+        .view img {
+            display: block;
+            position: relative;
+            transition: all 0.2s linear;
+        }
+        
+        .view .overlay {
+            position: absolute;
+            top: 0;
+            /* bottom: 0; */
+            left: 0;
+            width: 340px;
+            overflow: hidden;
+            height: 360px;
+            opacity: 0;
+            border-radius: 12px;
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .view:hover .overlay {
+            opacity: 0.5;
+        }
+        
+        .section_testimonials {
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 0%, #5b86e5 100%);
+        }
+        
+        .testimonial-wrapper {
+            width: 100%;
+            max-width: 960px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0 auto;
+        }
+        
+        .slider-wrapper::after {
+            content: '\f10e';
+            font-family: "FontAwesome";
+            position: absolute;
+            font-size: 64px;
+            left: 63%;
+            bottom: 14%;
+            z-index: 1;
+            color: white;
+            background-image: -webkit-linear-gradient(0deg, #36d1dc 45%, #ffffff 0%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .slider .slider-item img {
+            width: 28%;
+            margin: 0 auto;
+            float: left;
+            border: 4px solid #5ad2dc;
+            padding: 6px;
+        }
+        
+        .owl-carousel {
+            padding: 118px 0 0 0;
+        }
+        
+        .slider-item {
+            background-color: #222;
+            color: white;
+            min-height: 170px;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
+        .owl-dots {
+            display: none;
+        }
+        
+        .aione-footer {
+            border-top: none;
+        }
+        
+        .aione-copyright {
+            border-top: none;
+            background-color: #222222;
+            color: #ffffff;
+            padding: 10px;
         }
     </style>
 
@@ -364,12 +458,12 @@
                                             <div class="home-wrapper">
                                                 <div class="section-box">
                                                     <div class="profile">
-                                                        <div class="ac l65 m65 s65 pr-90">
+                                                        <div class="ac l60 m60 s60 pr-25">
                                                             <div class="image">
                                                                 <img src="http://aione.oxosolutions.com/rajindersehmi/wp-content/uploads/sites/57/2019/10/IMG_6659.jpeg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="ac l35 m35 s35  mt-50">
+                                                        <div class="ac l40 m40 s40 pl-20 mt-50">
                                                             <p class="hello">HELLO EVERYBODY, I AM</p>
                                                             <h1 class="profile-title">RAJINDER</br>SINGH</h1>
                                                             <h2 class="profile-position">Developer and Startup entrepreneur</h2>
@@ -612,6 +706,186 @@
                                                                 <p>Let’s use power of content management systems and customize according to your business requirements.</p>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_portfolio pv-40">
+                                        <h3 class="aione-align-center font-size-36 font-weight-700 black">PORTFOLIO </h3>
+                                        <div class="wrapper width-90 mt-30">
+                                            <div class="ar">
+                                                <div class=" ac l33 m50 s100">
+                                                    <div class="view view-first mb-20">
+                                                        <img src="https://colorlib.com/preview/theme/meetme/img/gallery/project-1.jpg">
+                                                        <div class="overlay">
+                                                            <img src="https://colorlib.com/preview/theme/meetme/img/gallery/icon.png" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=" ac l33 m50 s100">
+                                                    <div class="view view-first mb-20">
+                                                        <img src="https://colorlib.com/preview/theme/meetme/img/gallery/project-2.jpg">
+                                                        <div class="overlay">
+                                                            <img src="https://colorlib.com/preview/theme/meetme/img/gallery/icon.png" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=" ac l33 m50 s100">
+                                                    <div class="view view-first mb-20">
+                                                        <img src="https://colorlib.com/preview/theme/meetme/img/gallery/project-3.jpg">
+                                                        <div class="overlay">
+                                                            <img src="https://colorlib.com/preview/theme/meetme/img/gallery/icon.png" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_testimonials">
+                                        <h3 class="aione-align-center font-size-36 font-weight-700 black pt-40">TESTIMONIALLS</h3>
+                                        <p class="aione-align-center white font-size-16 font-weight-100">WHAT OUR HAPPY CLIENTS SAY ABOUT US</p>
+                                        <div class="ar testimonials-bg">
+                                            <div class="testimonial-wrapper">
+                                                <div class="slider-wrapper ph-30p  mt-25 mb-100">
+                                                    <div class="slider owl-carousel aione" data-nav-text="" data-items="1" data-margin="10" data-loop="true" data-autoplay="true">
+                                                        <div class="slider-item">
+                                                            <img class="aione-circle aione-align-center" src="http://aione.oxosolutions.com/rajindersehmi/wp-content/uploads/sites/57/2019/10/testimonial1.jpg" alt="" />
+                                                            <div class="content">
+                                                                <h5 class="aione-align-center font-size-36 font-weight-700 white">Tom Mldas</h5>
+                                                                <p class="aione-align-center font-size-16 line-height-20">"Can't help but wonder how creative and talented this girl can be, Hailey you rock!"</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slider-item">
+                                                            <img class="aione-circle aione-align-center" src="http://aione.oxosolutions.com/rajindersehmi/wp-content/uploads/sites/57/2019/10/testimonial2.jpg" alt="" />
+                                                            <div class="content">
+                                                                <h5 class="aione-align-center font-size-36 font-weight-700 white">Ruby Davis</h5>
+                                                                <p class="aione-align-center font-size-16 line-height-20">"I'll characterize her work by a hint of playful and ironic emotions, always fresh solutions and new views."</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slider-item">
+                                                            <img class="aione-circle aione-align-center" src="http://aione.oxosolutions.com/rajindersehmi/wp-content/uploads/sites/57/2019/10/testimonial3.jpg" alt="" />
+                                                            <div class="content">
+                                                                <h5 class="aione-align-center font-size-36 font-weight-700 white">Tray Adams</h5>
+                                                                <p class="aione-align-center font-size-16 line-height-20">"We've collaborated with Hailey on the branding of my new magazine and all I can say is she's the most out-of-bounds person I've ever met!"</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section_contact">
+                                        <div class="wp-block-aione-blocks-aione-row ar">
+                                            <div class="wp-block-aione-blocks-aione-column ac l40 m100 s100 ph-3p mv-15">
+                                                <div class="wrapper">
+                                                    <div class="wp-block-aione-blocks-aione-wrapper aione-wrapper display-block  contact-wrapper p-15">
+                                                        <h3 class="has-text-align-left">Contact Us</h3>
+
+                                                        <div class="wp-block-aione-blocks-aione-row ar">
+                                                            <div class="wp-block-aione-blocks-aione-column ac l50 m100 s100">
+                                                                <div class="wrapper">
+                                                                    <h4>Address:-</h4>
+
+                                                                    <p class="has-text-align-left">NH 95, Rani ka bagh, Amritsar- 143001, Punjab. INDIA.</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="wp-block-aione-blocks-aione-column ac l50 m100 s100">
+                                                                <div class="wrapper">
+                                                                    <h4>Phone:-</h4>
+
+                                                                    <p class="has-text-align-left  m-7">+91-8564053656</p>
+
+                                                                    <p class="m-7">+91-7884545654</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="wp-block-aione-blocks-aione-row ar">
+                                                            <div class="wp-block-aione-blocks-aione-column ac l50 m100 s100">
+                                                                <div class="wrapper">
+                                                                    <h4>Email:-</h4>
+
+                                                                    <p class="has-text-align-left">sehmi@gmail.com</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="wp-block-aione-blocks-aione-column ac l50 m100 s100">
+                                                                <div class="wrapper">
+                                                                    <h4>Website</h4>
+
+                                                                    <p>www.marraiagepalace.com</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <p></p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="wp-block-aione-blocks-aione-column ac l60 m100 s100 ph-3p mv-15">
+                                                <div class="wrapper">
+                                                    <div class="wp-block-aione-blocks-aione-wrapper aione-wrapper display-block  contact-wrapper p-15">
+                                                        <h3 class="has-text-align-left">Contact</h3>
+
+                                                        <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1">
+                                                            <a id="gf_1" class="gform_anchor"></a>
+                                                            <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="/rajindersehmi/contact/#gf_1" class="has-validation-callback">
+                                                                <div class="gform_body">
+                                                                    <ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below">
+                                                                        <li id="field_1_11" class="gfield ac l50 s50 m50 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                                            <label class="gfield_label" for="input_1_11">First Name<span class="gfield_required">*</span></label>
+                                                                            <div class="ginput_container ginput_container_text">
+                                                                                <input name="input_11" id="input_1_11" type="text" value="" class="large" tabindex="49" aria-required="true" aria-invalid="false">
+                                                                            </div>
+                                                                        </li>
+                                                                        <li id="field_1_12" class="gfield ac l50 s50 m50 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                                            <label class="gfield_label" for="input_1_12">Last Name<span class="gfield_required">*</span></label>
+                                                                            <div class="ginput_container ginput_container_text">
+                                                                                <input name="input_12" id="input_1_12" type="text" value="" class="large" tabindex="50" aria-required="true" aria-invalid="false">
+                                                                            </div>
+                                                                        </li>
+                                                                        <li id="field_1_2" class="gfield ac l50 s50 m50 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                                            <label class="gfield_label" for="input_1_2">Email<span class="gfield_required">*</span></label>
+                                                                            <div class="ginput_container ginput_container_email">
+                                                                                <input name="input_2" id="input_1_2" type="email" value="" class="large" tabindex="51" placeholder="Email" aria-required="true" aria-invalid="false">
+                                                                            </div>
+                                                                        </li>
+                                                                        <li id="field_1_9" class="gfield ac l50 s50 m50 field_sublabel_below field_description_below gfield_visibility_visible">
+                                                                            <label class="gfield_label" for="input_1_9">Phone</label>
+                                                                            <div class="ginput_container ginput_container_phone">
+                                                                                <input name="input_9" id="input_1_9" type="tel" value="" class="medium" tabindex="52" aria-invalid="false">
+                                                                            </div>
+                                                                        </li>
+                                                                        <li id="field_1_7" class="gfield ml-15 mr-15 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+                                                                            <label class="gfield_label" for="input_1_7">Message<span class="gfield_required">*</span></label>
+                                                                            <div class="ginput_container ginput_container_textarea">
+                                                                                <textarea name="input_7" id="input_1_7" class="textarea medium" tabindex="53" aria-required="true" aria-invalid="false" rows="10" cols="50"></textarea>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="gform_footer top_label">
+                                                                    <input type="submit" id="gform_submit_button_1" class="gform_button button" value="Send" tabindex="54" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  if( !jQuery(&quot;#gform_1&quot;)[0].checkValidity || jQuery(&quot;#gform_1&quot;)[0].checkValidity()){window[&quot;gf_submitting_1&quot;]=true;}  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} if( !jQuery(&quot;#gform_1&quot;)[0].checkValidity || jQuery(&quot;#gform_1&quot;)[0].checkValidity()){window[&quot;gf_submitting_1&quot;]=true;}  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }">
+                                                                    <input type="hidden" name="gform_ajax" value="form_id=1&amp;title=&amp;description=&amp;tabindex=49">
+                                                                    <input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
+                                                                    <input type="hidden" class="gform_hidden" name="gform_submit" value="1">
+
+                                                                    <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                                                                    <input type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsIjQ4NWNmZmIzZjhhYTkyM2Y4ZDU0ZWEwNzM2ODU5NWFmIl0=">
+                                                                    <input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
+                                                                    <input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
+                                                                    <input type="hidden" name="gform_field_values" value="">
+
+                                                                </div>
+                                                            </form>
+                                                        </div>
 
                                                     </div>
                                                 </div>
@@ -634,6 +908,24 @@
             <!-- .aione-footer -->
             <div id="aione_copyright" class="aione-copyright">
                 <div class="wrapper">
+                    <div class="ar">
+                        <div class="ac l70 m70 s70">
+                            Copyright © 2020 Rajinder. All rights reserved.
+                        </div>
+                        <div class="ac l30 m30 s30">
+                            <div class="wp-block-aione-blocks-aione-social-icons">
+                                <div class="aione-social-icons-container">
+                                    <ul class="aione-social-icons small circle horizontal colored ">
+                                        <li class="facebook"><a href="http://facebook.com/" target="_blank" rel="noopener noreferrer"><span class="icon"></span><span class="label">Facebook</span></a></li>
+                                        <li class="youtube"><a href="http://youtube.com/" target="_blank" rel="noopener noreferrer"><span class="icon"></span><span class="label">Youtube</span></a></li>
+                                        <li class="twitter"><a href="http://twitter.com/" target="_blank" rel="noopener noreferrer"><span class="icon"></span><span class="label">Twitter</span></a></li>
+                                        <li class="linkedin"><a href="http://linkedin.com/" target="_blank" rel="noopener noreferrer"><span class="icon"></span><span class="label">Linkedin</span></a></li>
+                                        <li class="instagram"><a href="http://instagram.com/" target="_blank" rel="noopener noreferrer"><span class="icon"></span><span class="label">Instagram</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- .aione-copyright -->
