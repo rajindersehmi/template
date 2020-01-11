@@ -7,6 +7,10 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
     <style>
+        *:focus {
+            outline: none;
+        }
+        
         .aione-header {
             position: absolute;
             width: 100%;
@@ -373,7 +377,7 @@
             position: absolute;
             font-size: 64px;
             left: 63%;
-            margin-top:-30px;
+            margin-top: -30px;
             z-index: 1;
             color: white;
             background-image: -webkit-linear-gradient(0deg, #36d1dc 45%, #ffffff 0%);
@@ -434,10 +438,10 @@
                         <div class="ac l70 m70 s70">
                             <nav id="aione_nav" class="aione-nav  horizontal aione-align-right">
                                 <ul id="aione_menu" class="aione-menu">
-                                    <li class="aione-nav-item active level0"><a href="#about"><span class="nav-item-text" data-hover="About">Home</span></a></li>
-                                    <li class="aione-nav-item level0"><a href="#skills"><span class="nav-item-text" data-hover="Skills">About</span></a></li>
-                                    <li class="aione-nav-item level0"><a href="#portfolio"><span class="nav-item-text" data-hover="Portfolio">Services</span></a></li>
-                                    <li class="aione-nav-item level0"><a href="#services"><span class="nav-item-text" data-hover="Services">Portfolio</span></a></li>
+                                    <li class="aione-nav-item active level0"><a href="#home"><span class="nav-item-text" data-hover="Home">Home</span></a></li>
+                                    <li class="aione-nav-item level0"><a href="#about"><span class="nav-item-text" data-hover="About">About</span></a></li>
+                                    <li class="aione-nav-item level0"><a href="#services"><span class="nav-item-text" data-hover="Services">Services</span></a></li>
+                                    <li class="aione-nav-item level0"><a href="#portfolio"><span class="nav-item-text" data-hover="Portfolio">Portfolio</span></a></li>
                                     <li class="aione-nav-item level0"><a href="#testimonials"><span class="nav-item-text" data-hover="Testimonials">Testimonials</span></a></li>
                                     <li class="aione-nav-item level0"><a href="#contact"><span class="nav-item-text" data-hover="Contact">Contact</span></a></li>
                                 </ul>
@@ -453,7 +457,7 @@
                         <div class="wrapper">
                             <div id="aione_page_content" class="aione-page-content">
                                 <div class="wrapper">
-                                    <section class="section_home ">
+                                    <section class="section_home" id="home">
                                         <div class="ar">
                                             <div class="home-wrapper">
                                                 <div class="section-box">
@@ -500,7 +504,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_about">
+                                    <section class="section_about" id="about">
                                         <div class="ar pl-72 pb-80 pt-100">
                                             <div class="ac l50 m50 s50">
                                                 <div class="about-wrapper">
@@ -590,7 +594,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_skills pt-75 pb-30">
+                                    <section class="section_skills pt-75 pb-30" id="about">
                                         <div class="wrapper aione-align-center">
                                             <div class="aione-tabs horizontal align-center theme-bold">
                                                 <div class="nav">
@@ -652,7 +656,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_services pt-60 pb-80">
+                                    <section class="section_services pt-60 pb-80" id="services">
                                         <h3 class="aione-align-center black font-size-36 font-weight-700">SERVICES</h3>
                                         <div class="wrapper mt-30 services-bg">
                                             <div class="ar">
@@ -711,7 +715,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_portfolio pv-40">
+                                    <section class="section_portfolio pv-40" id="portfolio">
                                         <h3 class="aione-align-center font-size-36 font-weight-700 black">PORTFOLIO </h3>
                                         <div class="wrapper width-90 mt-30">
                                             <div class="ar">
@@ -745,7 +749,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_testimonials">
+                                    <section class="section_testimonials" id="testimonials">
                                         <h3 class="aione-align-center font-size-36 font-weight-700 black pt-40">TESTIMONIALLS</h3>
                                         <p class="aione-align-center white font-size-16 font-weight-100">WHAT OUR HAPPY CLIENTS SAY ABOUT US</p>
                                         <div class="ar testimonials-bg">
@@ -778,7 +782,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="section_contact">
+                                    <section class="section_contact" id="contact">
                                         <div class="wp-block-aione-blocks-aione-row ar">
                                             <div class="wp-block-aione-blocks-aione-column ac l40 m100 s100 ph-3p mv-15">
                                                 <div class="wrapper">
